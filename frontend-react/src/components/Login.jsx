@@ -27,7 +27,7 @@ const handleLogin = async (e) => {
     localStorage.setItem('refreshToken', response.data.refresh)
     console.log('Login successful');
     setIsLoggedIn(true)
-    navigate('/')
+    navigate('/dashboard')
     //console.log(response.data)
   } catch(error) {
       setError('Invalid credentials');
